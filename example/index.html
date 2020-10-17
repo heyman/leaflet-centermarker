@@ -15,10 +15,15 @@
     <script src="../src/leaflet.centermarker.js"></script>
     <script>
         // initialize map
-        var map = L.map('map', {keyboard: true}).setView([59.324617, 18.071457], 4);
+        var map = L.map('map', {
+            doubleClickZoom: false,
+            dragging: true,
+            scrollWheelZoom: false,
+            keyboard: false
+        }).setView([59.324617, 18.071457], 4);
         L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
-            maxZoom: 18,
+            maxZoom: 18
         }).addTo(map);
         
         // marker for current position
