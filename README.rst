@@ -17,7 +17,7 @@ will fire a "newposition" event.
 See it in action
 ================
 
-Leaflet CenterMarker can be seen in action on `What is my address? <https://whatismyaddress.net>`_.
+Leaflet CenterMarker can be seen in action on `What is my address? <https://whatismyaddress.net>`_
 
 You can also see the `bundled examples <https://heyman.github.com/leaflet-centermarker/example/>`_.
 
