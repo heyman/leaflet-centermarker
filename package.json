@@ -1,0 +1,26 @@
+{
+  "name": "leaflet-centermarker",
+  "version": "1.0",
+  "description": "",
+  "main": "src/leaflet.centermarker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heyman/leaflet-centermarker.git"
+  },
+  "keywords": [
+    "maps",
+    "leaflet",
+    "map",
+    "gis",
+    "geocode"
+  ],
+  "author": "Jonatan Heyman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heyman/leaflet-centermarker/issues"
+  },
+  "homepage": "https://github.com/heyman/leaflet-centermarker"
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <div id="map"></div>
+    <div id="log"></div>
+    
+    <a href="https://github.com/heyman/leaflet-centermarker"><img style="position:absolute; top:0; right:0; border:0; z-index:5000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="../src/leaflet.centermarker.js"></script>
+    <script>
+        // initialize map
+        var map = L.map('map', {keyboard: true}).setView([59.324617, 18.071457], 4);
+        L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 18,
+        }).addTo(map);
+        
+        // marker for current position
+        var marker = null;
+        marker = L.centerMarker(map).on("newposition", function() {
+            var latlng = marker.getLatLng()
+            $("#log").append("<div>New position: " + latlng.lat + ", " + latlng.lng + "</div>");
+        });
+    </script>
+</body>
