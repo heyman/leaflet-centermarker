@@ -19,7 +19,7 @@ See it in action
 
 Leaflet CenterMarker can be seen in action on `What is my address? <https://whatismyaddress.net>`_
 
-You can also see the `bundled examples <https://heyman.github.com/leaflet-centermarker/example/>`_.
+You can also see the `bundled examples <https://heyman.github.io/leaflet-centermarker/example/>`_.
 
 
 Example Code
